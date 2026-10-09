@@ -5,8 +5,8 @@
 ======================================== */
 
 const CONFIG = {
-  whatsapp: "5500000000000",
-  instagram: "https://www.instagram.com/"
+  whatsapp: "5583986121371",
+  instagram: "https://www.instagram.com/apssolucoesdigitais/"
 };
 
 
