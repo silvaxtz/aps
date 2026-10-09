@@ -5,17 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="APS Soluções Digitais: sites profissionais, catálogos digitais, pedidos pelo WhatsApp e soluções personalizadas para seu negócio.">
-
+  <meta name="description" content="APS Soluções Digitais: sites profissionais, catálogos digitais, pedidos pelo WhatsApp e soluções personalizadas.">
   <title>APS Soluções Digitais | Seu negócio em uma nova dimensão</title>
-
-  <link rel="icon" type="image/png" href="logo-perfil.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M7 7h10v10"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 4v16m-7-7 7 7 7-7"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="icon-sites" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="16" rx="2"/>
+      <path d="M3 9h18M7 6.5h.01M10 6.5h.01"/>
+    </symbol>
+    <symbol id="icon-catalog" viewBox="0 0 24 24">
+      <rect x="5" y="3" width="14" height="18" rx="1"/>
+      <path d="M8 7h8M8 11h8M8 15h8"/>
+    </symbol>
+    <symbol id="icon-custom" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="m19.4 15 .1.1 1.1.9-1.5 2.6-1.4-.5a8 8 0 0 1-1.5.9l-.2 1.5h-3l-.3-1.5a8 8 0 0 1-1.5-.9l-1.4.5-1.5-2.6 1.1-.9a8 8 0 0 1 0-1.8l-1.1-.9 1.5-2.6 1.4.5a8 8 0 0 1 1.5-.9l.3-1.5h3l.2 1.5a8 8 0 0 1 1.5.9l1.4-.5 1.5 2.6-1.1.9a8 8 0 0 1-.1 1.7Z" transform="translate(-1 -1)"/>
+    </symbol>
+    <symbol id="icon-focus" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="4"/>
+    </symbol>
+    <symbol id="icon-responsive" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="13" height="11" rx="1"/>
+      <path d="M7 20h5m-2-5v5"/>
+      <rect x="17" y="8" width="4" height="11" rx="1"/>
+    </symbol>
+  </svg>
 </head>
 
 <body>
@@ -24,7 +53,11 @@
   <header>
     <div class="container nav">
       <a href="#inicio" class="brand" aria-label="APS Soluções Digitais">
-        <img src="logo-completa.png" alt="APS Soluções Digitais" class="brand-logo">
+        <span class="brand-symbol">AP<span>S</span></span>
+        <span class="brand-copy">
+          <strong>APS SOLUÇÕES</strong>
+          <small>Digitais</small>
+        </span>
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Menu principal">
@@ -36,13 +69,12 @@
       </nav>
 
       <a class="button button-light" data-whatsapp href="#contato">
-        Solicitar orçamento ↗
+        Solicitar orçamento
+        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
       </a>
 
-      <button class="menu-toggle" id="menuToggle"
-        aria-label="Abrir menu" aria-expanded="false"
-        aria-controls="navLinks">
-        ☰
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>
       </button>
     </div>
   </header>
@@ -56,17 +88,19 @@
           <h1>Seu negócio <span>em uma nova</span> dimensão.</h1>
 
           <p class="hero-description">
-            Criamos experiências digitais que ajudam sua empresa
-            a se apresentar melhor, conquistar clientes e aproveitar
-            novas oportunidades no mundo digital.
+            Criamos experiências digitais que ajudam sua empresa a se apresentar melhor,
+            conquistar clientes e aproveitar novas oportunidades no mundo digital.
           </p>
 
           <div class="hero-actions">
             <a class="button button-light" data-whatsapp href="#contato">
-              Vamos conversar ↗
+              Vamos conversar
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
             </a>
+
             <a class="button button-outline" href="#servicos">
-              Conheça os serviços ↓
+              Conheça os serviços
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"/></svg>
             </a>
           </div>
 
@@ -76,9 +110,12 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Logo da APS Soluções Digitais">
+        <div class="hero-visual" aria-label="Identidade visual APS">
           <div class="orbit"></div>
-          <img src="logo-completa.png" alt="APS Soluções Digitais" class="hero-logo">
+          <div class="monogram">
+            <strong>APS</strong>
+            <small>SOLUÇÕES DIGITAIS</small>
+          </div>
           <div class="visual-tag">CRIATIVIDADE · TECNOLOGIA · INOVAÇÃO</div>
         </div>
       </div>
@@ -89,43 +126,56 @@
         <div class="section-heading reveal">
           <span class="eyebrow">O que fazemos</span>
           <h2>O digital certo para<br>o seu próximo passo.</h2>
-          <p>
-            Soluções pensadas para apresentar sua marca, organizar
-            seus produtos e facilitar o contato com seus clientes.
-          </p>
+          <p>Soluções pensadas para apresentar sua marca, organizar seus produtos e facilitar o contato com seus clientes.</p>
         </div>
 
         <div class="service-grid">
           <article class="service-card reveal">
             <span class="service-number">01 / 04</span>
-            <div class="service-icon" aria-hidden="true">⌘</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-sites"/></svg>
+            </div>
             <h3>Sites profissionais</h3>
             <p>Apresente sua empresa com um site moderno, responsivo e alinhado à identidade da sua marca.</p>
-            <a class="service-link" data-service="Sites profissionais" data-whatsapp href="#contato">Quero meu site ↗</a>
+            <a class="service-link" data-service="Sites profissionais" data-whatsapp href="#contato">
+              Quero meu site <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+            </a>
           </article>
 
           <article class="service-card reveal">
             <span class="service-number">02 / 04</span>
-            <div class="service-icon" aria-hidden="true">▤</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-catalog"/></svg>
+            </div>
             <h3>Catálogos digitais</h3>
             <p>Organize seus produtos em uma vitrine digital prática, bonita e fácil de compartilhar.</p>
-            <a class="service-link" data-service="Catálogos digitais" data-whatsapp href="#contato">Criar catálogo ↗</a>
+            <a class="service-link" data-service="Catálogos digitais" data-whatsapp href="#contato">
+              Criar catálogo <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+            </a>
           </article>
 
           <article class="service-card reveal">
             <span class="service-number">03 / 04</span>
-            <div class="service-icon" aria-hidden="true">↗</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-arrow-up-right"/></svg>
+            </div>
             <h3>Pedidos pelo WhatsApp</h3>
             <p>Facilite os pedidos com páginas que organizam os produtos escolhidos e encaminham as informações.</p>
-            <a class="service-link" data-service="Pedidos pelo WhatsApp" data-whatsapp href="#contato">Quero vender mais ↗</a>
+            <a class="service-link" data-service="Pedidos pelo WhatsApp" data-whatsapp href="#contato">
+              Quero vender mais <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+            </a>
           </article>
 
           <article class="service-card reveal">
             <span class="service-number">04 / 04</span>
-            <div class="service-icon" aria-hidden="true">⚙</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-custom"/></svg>
+            </div>
             <h3>Soluções personalizadas</h3>
             <p>Projetos digitais desenvolvidos conforme as necessidades e os objetivos da sua empresa.</p>
-            <a class="service-link" data-service="Soluções personalizadas" data-whatsapp href="#contato">Falar sobre meu projeto ↗</a>
+            <a class="service-link" data-service="Soluções personalizadas" data-whatsapp href="#contato">
+              Falar sobre meu projeto <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+            </a>
           </article>
         </div>
       </div>
@@ -133,37 +183,27 @@
 
     <section id="sobre">
       <div class="container about-grid">
-        <div class="about-mark reveal" aria-label="Símbolo da APS">
-          <img src="logo-perfil.png" alt="Símbolo da APS" class="about-logo">
+        <div class="about-mark reveal" aria-hidden="true">
+          <strong>APS</strong>
         </div>
 
         <div class="about-copy reveal">
           <span class="eyebrow">Sobre a APS</span>
           <h2>Mais que presença digital. Uma nova possibilidade.</h2>
-
-          <p>
-            A APS Soluções Digitais tem como propósito aproximar
-            negócios das oportunidades do mundo digital por meio
-            de projetos modernos, funcionais e pensados para cada cliente.
-          </p>
-
-          <p>
-            Acreditamos que cada negócio tem sua própria identidade.
-            Por isso, buscamos criar soluções que valorizem sua marca
-            e tornem a experiência dos seus clientes mais simples.
-          </p>
+          <p>A APS Soluções Digitais tem como propósito aproximar negócios das oportunidades do mundo digital por meio de projetos modernos, funcionais e pensados para cada cliente.</p>
+          <p>Acreditamos que cada negócio tem sua própria identidade. Por isso, buscamos criar soluções que valorizem sua marca e tornem a experiência dos seus clientes mais simples.</p>
 
           <div class="feature-list">
             <div class="feature">
-              <span>↗</span>
+              <span class="feature-icon"><svg class="icon"><use href="#icon-arrow-up-right"/></svg></span>
               <div><strong>Design moderno</strong><br>Apresentação profissional para sua marca.</div>
             </div>
             <div class="feature">
-              <span>⌘</span>
+              <span class="feature-icon"><svg class="icon"><use href="#icon-responsive"/></svg></span>
               <div><strong>Experiência responsiva</strong><br>Um site pensado para celular e computador.</div>
             </div>
             <div class="feature">
-              <span>◎</span>
+              <span class="feature-icon"><svg class="icon"><use href="#icon-focus"/></svg></span>
               <div><strong>Foco no seu negócio</strong><br>Soluções alinhadas aos seus objetivos.</div>
             </div>
           </div>
@@ -176,10 +216,7 @@
         <div class="section-heading reveal">
           <span class="eyebrow">Portfólio</span>
           <h2>Projetos que ganham<br>vida no digital.</h2>
-          <p>
-            Cada projeto começa com uma ideia. Conheça algumas
-            das experiências digitais que a APS pode desenvolver.
-          </p>
+          <p>Cada projeto começa com uma ideia. Conheça algumas das experiências digitais que a APS pode desenvolver.</p>
         </div>
 
         <div class="portfolio-grid">
@@ -223,10 +260,7 @@
           </article>
         </div>
 
-        <p class="portfolio-note">
-          Exemplos ilustrativos de serviços. Novos projetos poderão
-          ser adicionados ao portfólio conforme forem desenvolvidos.
-        </p>
+        <p class="portfolio-note">Exemplos ilustrativos de serviços. Novos projetos poderão ser adicionados ao portfólio conforme forem desenvolvidos.</p>
       </div>
     </section>
 
@@ -235,12 +269,10 @@
         <div class="cta-panel reveal">
           <span class="eyebrow">Seu próximo projeto começa aqui</span>
           <h2>Sua ideia merece<br>ganhar o mundo.</h2>
-          <p>
-            Conte para a APS o que você precisa. Vamos conversar
-            sobre uma solução digital para o seu negócio.
-          </p>
+          <p>Conte para a APS o que você precisa. Vamos conversar sobre uma solução digital para o seu negócio.</p>
           <a class="button button-light" data-whatsapp href="#contato">
-            Solicitar orçamento pelo WhatsApp ↗
+            Solicitar orçamento pelo WhatsApp
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
           </a>
         </div>
       </div>
@@ -250,8 +282,12 @@
   <footer>
     <div class="container">
       <div class="footer-main">
-        <a href="#inicio" class="brand footer-brand" aria-label="APS Soluções Digitais">
-          <img src="logo-completa.png" alt="APS Soluções Digitais" class="brand-logo footer-logo">
+        <a href="#inicio" class="brand" aria-label="APS Soluções Digitais">
+          <span class="brand-symbol">AP<span>S</span></span>
+          <span class="brand-copy">
+            <strong>APS SOLUÇÕES</strong>
+            <small>Digitais</small>
+          </span>
         </a>
 
         <div class="footer-links">
@@ -259,7 +295,7 @@
           <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
           <a href="#portfolio">Portfólio</a>
-          <a href="#" id="instagramLink" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="#" id="instagramLink" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
 
@@ -270,7 +306,9 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" data-whatsapp href="#contato" aria-label="Fale com a APS pelo WhatsApp">↗</a>
+  <a class="whatsapp-float" data-whatsapp href="#contato" aria-label="Fale com a APS pelo WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+  </a>
 
   <script src="script.js"></script>
 </body>
